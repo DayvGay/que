@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nat</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Lançamentos</a>
+        </li>
+       
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Livros</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Filosofia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Autores do mês</a>
+        </li>
+      </ul>
+    </ul>
+    <img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+  </div>
+    </div>
+    <div class="container">
+      <a href="#"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Entenda mais sobre filosofia</h2>
+    <p class="banner__texto"></p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Livros de Filosofia</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=igDQDwAAQBAJ&hl=pt-BR&pg=PA1&img=1&zoom=3&bul=1&sig=ACfU3U0EYmVlVe_DJmZPSrAs7G12XC5GXA&w=1280"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=Iw83EAAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U1fmn3NTBhpvwxd0oFOC5OOW3T2cQ&w=1280"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=dKAPEQAAQBAJ&hl=pt-BR&pg=PA1&img=1&zoom=3&bul=1&sig=ACfU3U3nXNz0hnMduYJpvagEuBRXGULeNQ&w=1280" alt="Livro sobre javascript assertivo da alura books">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://books.google.com.br/books/publisher/content?id=n2DBDwAAQBAJ&hl=pt-BR&pg=PA1&img=1&zoom=3&bul=1&sig=ACfU3U0WYw9Du7vapRsEZ8K0eKtzyUgCdw&w=1280" alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://books.google.com.br/books/content?id=2DgT_J9HyogC&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U2yidqJJ9FnTW6hNBN_bMqfrkbxUQ&w=1280" alt="Livro sobre portugol" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://books.google.com.br/books/publisher/content?id=1x1kDAAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U3pOKRC_VT0DgXcnnIwiWhyPrs3Fg&w=1280" alt="Livro sobre acessibilidade" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo"></h3>
+          <h2 class="descrição__titulo-livro">Immanuel Kant</h2>
+          <p class="descrição__texto">
+            Em sua longa e complexa gênese, a estrutura e o argumento aqui propostos por Kant traçam as fronteiras do conhecimento humano ao delinear um afastamento radical das formas de concepção precedentes, contrastando-as com os esboços de sua filoso­fia transcendental, e tornar-se uma influência inevitável aos movimentos filosóficos subsequentes.
+        </div>
+        <img src="https://m.media-amazon.com/images/I/81osserwWeL._AC_UF1000,1000_QL80_.jpg" width="500" height="280" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=JPHLDAAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U0I2H5edTtAALwj7IfSiPY9B89_Rw&w=1280"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=99-NDwAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U28z7FKSmANDVravsh7WpT4lNVfIw&w=1280" alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=eS-GEAAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U3C6E12MJoFAQM2qnYgtpcHW6B4jQ&w=1280" alt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=OsCCEAAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U0MvVPT22AFraNFAvjXhKavH6U5eA&w=1280" alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=c3v-EAAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U3zqhYMBrxoy8udUqtHuE5aYeJfdQ&w=1280" alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=DacVEQAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U0_qjYXrM6vRyd43XYTXV3_Rn_MCA&w=1280" alt="livro sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autor do Mês</h3>
+          <h2 class="descrição__titulo-livro">Jostein Gaarder</h2>
+          <p class="descrição__texto">Jostein costuma escrever seus livros e contos pela perspectiva das crianças, explorando sua maneira de ver o mundo. Normalmente se utiliza de metaficção e constrói histórias dentro de histórias. Seu trabalho mais conhecido é O Mundo de Sofia, publicado em 1991, traduzido para 60 idiomas, tendo vendido mais de 40 milhões de cópias pelo mundo.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Jostein_Gaarder_Leipziger_Buchmesse_2017_%28cropped%29.jpg/280px-Jostein_Gaarder_Leipziger_Buchmesse_2017_%28cropped%29.jpg" width="500" height="280" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Immanuel Kant</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Jostein costuma</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Livros</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Filosofia</a>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo"></h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
